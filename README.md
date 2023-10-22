@@ -1,2 +1,1 @@
-# ecoride
 # EcoRide
