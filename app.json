@@ -1,9 +1,10 @@
 {
   "expo": {
-    "name": "ecoridetest",
-    "slug": "ecoridetest",
+    "name": "ecoride",
+    "slug": "ecoride",
     "version": "1.0.0",
     "orientation": "portrait",
+    "location": "Bellevue, Washington",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
@@ -15,7 +16,13 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.mycompany.ecoride",
+      "supportsTablet": true, 
+      "config": {
+        "googleMapsApiKey": "AIzaSyCJusXrjZNGr0J3khj4t_obbTG6K6wtTwg",
+      "googleServicesFile": "./GoogleService-Info.plist"
+
+
     },
     "android": {
       "adaptiveIcon": {
@@ -25,6 +32,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "@react-native-firebase/app",
+      "@react-native-firebase/perf",
+      "@react-native-firebase/crashlytics"
+    ]
   }
-}
+}}
